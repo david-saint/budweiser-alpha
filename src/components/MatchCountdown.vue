@@ -32,7 +32,6 @@
         <img src="../assets/img/gnn-logo.png" alt="">
       </div>
       <div>
-        UEFA Champions League Sponsors |
         <img src="../assets/img/heineken-logo.png" alt="">
       </div>
     </div>
