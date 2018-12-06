@@ -1,0 +1,23 @@
+.sponsors {
+	display: flex;
+	padding-top: 65px;
+	position: relative;
+	justify-content: flex-end;
+	align-items: center;
+
+	p {
+		margin: 0 7px;
+		font-weight: 300;
+	}
+	#cocacola {
+		height: 120px;
+	}
+}
+
+@media only screen and (max-height: 500px) {
+	.sponsors {
+		padding-top: 30px;
+		p { font-size: 14px; }
+		#cocacola { height: 85px;}
+	}
+}

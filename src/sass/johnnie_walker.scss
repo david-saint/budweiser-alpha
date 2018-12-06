@@ -1,0 +1,36 @@
+@import './partials/_johnnie_walker_content';
+@font-face {
+    font-family: 'Theano Didot';
+    src:url(../assets/fonts/TheanoDidot.ttf) format('truetype');
+}
+
+body {
+	margin: 0;
+	color: #fff;
+	width: 100%;
+	height: 100vh;
+	background: #1a222f;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	background-image: url(../assets/img/johnnie_walker_bg.png);
+	background-size: cover;
+	background-position: 0 -120px;
+}
+
+
+.container {
+	width: 95%;
+	height: 100%;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+@media only screen and (min-height: 965px) and (min-width: 1280px) {
+	body {
+		background-position: 0px 0; 
+	}
+}

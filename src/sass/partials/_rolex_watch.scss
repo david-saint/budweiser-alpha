@@ -1,0 +1,49 @@
+.watch {
+	position: absolute;
+	top: 15%;
+	left: 59%;
+	height: 500px;
+
+	div {
+		position: relative;
+		height: 100%;
+		width: 100%;
+		div {position: absolute;}
+	}
+}
+
+#hours {
+	top: 23%;
+	margin-left: 10px;
+	height: 400px;
+	width: 38px;
+	transform: rotate(0deg);
+	transition: transform 4s linear;
+}
+#minutes {
+	height: 616px;
+	width: 34px;
+	margin-left: 8px;
+	transform: rotate(0deg);
+	transition: transform 2s linear;
+}
+#seconds {
+	height: 635px;
+	width: 53px;
+	transform: rotate(0deg);
+	transition: transform 1s linear;
+}
+
+@media only screen and (max-height: 500px) {
+	.watch {height: 250px;}
+	#hours {margin-left: 5px; height: 200px; width: 19px; img {height: 100px;}}
+	#minutes {height: 308px; width: 17px; margin-left: 4px; img {height: 154px}}
+	#seconds {height: 318px; width: 27px; img {height: 215px;}}
+}
+
+@media only screen and (min-height: 965px) and (min-width: 1280px) {
+	.watch {
+		top: 17%;
+		left: 65%;
+	}
+}

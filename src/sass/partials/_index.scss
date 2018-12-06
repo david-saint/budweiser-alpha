@@ -1,0 +1,35 @@
+.container {
+	width: 90%;
+	height: 100%;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.fifa-s {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	#fscup {
+		height: 156px;
+	}
+	#fscont { height: 75px}
+}
+
+.abs {
+	position: absolute;
+	height: 30px;
+	width: 60%;
+	background-color: rgba(0,0,0, 0.6);
+	bottom: 32px;
+	left: 20%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+@media only screen and (max-height: 500px) {
+	.fifa-s{#fscup {height: 120px;}}
+	.fifa-s{#fscont {height:40px;}}
+}

@@ -1,0 +1,28 @@
+@import './partials/_penalty_shootout';
+@font-face {
+    font-family: 'Ostrich Sans';
+    src:url(../assets/fonts/OstrichSans.otf) format('truetype');
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	width: 100%;
+	height: 100vh;
+	background: red;
+	font-weight: 400;
+	overflow: hidden;
+	font-family: 'Raleway', sans-serif;
+	background-image: url(../assets/img/bg-grass.png);
+}
+
+.container {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}

@@ -1,0 +1,72 @@
+.content {
+	width: 85%;
+	padding: 0;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+
+	.top {
+		display: flex;
+		padding-top: 35px;
+		flex-direction: row;
+		align-items: baseline;
+		justify-content: space-between;
+
+		#cup {height: 120px;}
+		#type {height: 80px;}
+		#coke-ish {height: 100px;}
+	}
+
+	.bottom {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		.left, .right {padding-top: 100px;}
+
+		.table {
+			width: 50%;
+			height: 70%;
+
+			h1 {
+				font-family: 'Montserrat', sans-serif;
+				font-weight: 400;
+				font-size: 32px;
+				text-transform: uppercase;
+			}
+
+			table {
+				margin-right: auto;
+				margin-left: auto;
+				border-spacing: 20px 0;
+				th, td {
+					padding: 25px;
+					text-align: center;
+					min-width: 60px;
+				}
+			}
+		}
+	}
+}
+
+.center {text-align: center;}
+.white {background-color: #fff; color: #f00;}
+
+@media only screen and (max-height: 500px) {
+	.content {
+		.top {padding-top: 18px; #cup {height: 60px;}#type {height: 40px;}#coke-ish {height: 50px;}}
+		.bottom {
+			.left, .right {padding-top: 50px; img {height: 313px;}}
+			.table {h1 {font-size: 16px;} table {border-spacing: 10px 0; th,td {padding: 12px; min-width: 30px;}}}
+		}
+	}
+}
+
+@media only screen and (min-height: 985px) and (min-width: 1280px) {
+	.content {
+		.top {padding-top: 17px;}
+		.bottom {
+			.table {h1 {font-size: 24px;} table {border-spacing: 15px 0px; th,td {padding: 25px; min-width: 30px;}}}
+		}
+	}
+}

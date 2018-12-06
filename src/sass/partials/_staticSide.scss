@@ -1,0 +1,51 @@
+.static-side {
+	margin-left: 5%;
+	width: 40%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+	.fifa-s {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	p.cocacola {
+		text-transform: uppercase;
+		font-size: 85px;
+		line-height: 0.9;
+		font-family: 'Montserrat', sans-serif;
+		padding-left: 55px;
+		font-weight: 800;
+		margin: 20px 0 0 0;
+	}
+	p.gotd {
+		text-transform: uppercase;
+		font-size: 145px;
+		font-family: 'Montserrat', sans-serif;
+		padding-left: 55px;
+		letter-spacing: 7px;
+		font-weight: 100;
+		margin: 0;
+	}
+	div.coke {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: baseline;
+		padding-left: 35px;
+		padding-bottom: 10px;
+	}
+}
+
+@media only screen and (min-height: 965px) and (min-width: 1280px) {
+	.static-side {
+		p.cocacola {font-size: 65px;}
+		p.gotd {font-size: 100px; padding-top: 20px}
+	}
+}
+@media only screen and (max-height: 500px) {
+	.static-side { p.cocacola {font-size: 43px; } p.gotd {font-size: 75px;} }
+
+}

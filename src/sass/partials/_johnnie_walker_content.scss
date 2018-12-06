@@ -1,0 +1,74 @@
+.drink {
+	position: absolute;
+	bottom: 0;
+	left: 0px;
+}
+.walking {
+	position: absolute;
+	top: 45%;
+	left: 68%;
+	div {
+		position: relative;
+	}
+}
+.left {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 75px;
+	#time {
+		font-size: 250px;
+		margin-top: 15px;
+		letter-spacing: 10px;
+	}
+	.label {
+		display: flex;
+		justify-content: space-around;
+		font-size: 65px;
+	}
+	p {
+		margin: 0px;
+		font-size: 85px;
+		font-family: 'Theano Didot', serif;
+	}
+}
+#right_leg, #left_leg {
+	transition: all 1s ease-in-out;
+	position: absolute;
+	height: 360px;
+	width: 120px;
+	img {
+		position: absolute;
+		bottom: 0px;
+	}
+}
+
+#right_leg {
+	left: -60px;
+	transform: rotate(35deg);
+}
+#left_leg {
+	left: 60px;
+	transform: rotate(-35deg);
+}
+
+@media only screen and (max-height: 500px) {
+	.left {
+		padding: 38px;
+		#time {font-size: 125px; margin-top: 8px;}
+		.label {font-size: 33px;}
+		p {font-size: 43px;}
+	}
+	.drink {img {height: 45px;}}
+	#right_leg, #left_leg { height: 180px; width: 60px;}
+	#right_leg {img {height: 102px;} left: -30px;}
+	#left_leg {img {height: 93px;} left: 30px;}
+}
+
+@media only screen and (min-height: 965px) and (min-width: 1280px) {
+	.walking {
+		top: 38%;
+		left: 72%;
+	}
+}

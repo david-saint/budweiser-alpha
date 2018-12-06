@@ -1,0 +1,43 @@
+div.countdown {
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 330px;
+	height: 130px;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	letter-spacing: 3px;
+	font-family: 'Montserrat', sans-serif;
+	background: url(../assets/img/Rectangle4.svg) no-repeat center;
+	background-size: cover;
+
+	p {
+		padding: 0;
+		color: red;
+		font-size: 14px;
+		font-weight: 600;
+		text-align: center;
+		margin: 15px 0 5px 0;
+		text-transform: uppercase;
+
+		&#count {
+			margin: 0;
+			font-size: 40px;
+			font-weight: 800;
+		}
+	}
+}
+@media only screen and (max-height: 500px) {
+	div.countdown {
+		width: 260px;
+		height: 90px;
+		p {
+			font-size: 10px;
+			margin: 10px 0 3px 0;
+			&#count {
+				font-size: 24px;
+			}
+		}
+	}
+}

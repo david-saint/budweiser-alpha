@@ -1,0 +1,4 @@
+/*    /index.html   200
+
+# Redirect default Netlify subdomain to primary domain
+https://vigilant-montalcini-9b64e3.netlify.com/* https://www.heineken-alpha.ml/:splat 301!
